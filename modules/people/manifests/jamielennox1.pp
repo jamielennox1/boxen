@@ -1,8 +1,6 @@
 # == Class: people::jamielennox1
 #
 class people::jamielennox1 {
-  # resources
-  notify { 'Hello Jamie': }
 
   class { '::virtualbox':
     version    => '5.0.10',
@@ -16,5 +14,16 @@ class people::jamielennox1 {
     'rodjek/vim-puppet'
   ]: }
 
-  include skype
+  package { 'skype':
+    ensure => installed,
+  }
+
+  package { 'spotify':
+    provider => 'brewcask',
+  }
+
+  class { '::vagrant':
+    version => '1.7.4',
+  }
+
 }
