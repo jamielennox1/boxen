@@ -6,6 +6,6 @@ class people::jamielennox1 {
 
   class { '::virtualbox':
     version    => '5.0.10',
-    path_level => '104061',
+    patch_level => '104061',
   }
 }
