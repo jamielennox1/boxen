@@ -8,4 +8,10 @@ class people::jamielennox1 {
     version    => '5.0.10',
     patch_level => '104061',
   }
+
+  include vim
+  vim::bundle { [
+    'scrooloose/syntastic',
+    'sjl/gundo.vim'
+  ]: }
 }
