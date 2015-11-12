@@ -18,9 +18,7 @@ class people::jamielennox1 {
     provider => 'brewcask',
   }
 
-  package { 'spotify':
-    provider => 'brewcask',
-  }
+  include spotify
 
   class { '::vagrant':
     version => '1.7.4',

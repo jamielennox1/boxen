@@ -60,6 +60,7 @@ github "xquartz",     "1.2.1"
 github "virtualbox",  "1.0.13"
 github "vim",         "1.0.5"
 github "vagrant",     "3.3.3"
+github "spotify",     "1.0.2"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
