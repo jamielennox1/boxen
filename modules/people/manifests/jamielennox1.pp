@@ -15,7 +15,7 @@ class people::jamielennox1 {
   ]: }
 
   package { 'skype':
-    ensure => installed,
+    provider => 'brewcask',
   }
 
   package { 'spotify':
