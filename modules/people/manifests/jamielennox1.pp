@@ -12,6 +12,7 @@ class people::jamielennox1 {
   include vim
   vim::bundle { [
     'scrooloose/syntastic',
-    'sjl/gundo.vim'
+    'sjl/gundo.vim',
+    'rodjek/vim-puppet'
   ]: }
 }
