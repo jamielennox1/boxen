@@ -14,24 +14,13 @@ class people::jamielennox1 {
     'rodjek/vim-puppet'
   ]: }
 
-  package { 'skype':
+  package { ['skype', 'terraform', 'packer', 'google-chrome']:
     provider => 'brewcask',
   }
 
-  package { 'microsoft-lync':
-    provider => 'brewcask',
-  }
-
-  package { 'terraform':
-    provider => 'brewcask',
-  }
-
-  package { 'packer':
-    provider => 'brewcask',
-  }
-
-  package { 'google-chrome':
-    provider => 'brewcask',
+  package { ['rubocop', 'puppet-lint', 'r10k']:
+    ensure   => installed,
+    provider => gem,
   }
 
   include spotify
@@ -47,11 +36,6 @@ class people::jamielennox1 {
   atom::package { 'language-terraform': }
   atom::package { 'linter-puppet-lint': }
   atom::package { 'linter-rubocop': }
-
-  package { ['rubocop', 'puppet-lint', 'r10k']:
-    ensure   => installed,
-    provider => gem,
-  }
 
 
 
