@@ -59,6 +59,7 @@ github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
 github "virtualbox",  "1.0.13"
 github "vim",         "1.0.5"
+github "skype",       "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

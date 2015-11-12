@@ -15,4 +15,6 @@ class people::jamielennox1 {
     'sjl/gundo.vim',
     'rodjek/vim-puppet'
   ]: }
+
+  include skype
 }
