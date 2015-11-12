@@ -62,6 +62,7 @@ github "vim",         "1.0.5"
 github "vagrant",     "3.3.3"
 github "spotify",     "1.0.2"
 github "atom",        "1.3.0"
+github "postgresql",  "4.0.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

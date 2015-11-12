@@ -31,6 +31,8 @@ class people::jamielennox1 {
 
   include atom
 
+  include postgresql
+
   atom::package { 'linter': }
   atom::package { 'language-puppet': }
   atom::package { 'language-terraform': }
